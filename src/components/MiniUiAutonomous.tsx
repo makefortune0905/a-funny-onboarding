@@ -88,7 +88,7 @@ export function MiniUiAutonomous() {
   );
 }
 
-// 7天的假数据
+// 5天的假数据（周一至周五）
 const weekData = [
   {
     day: '周一',
@@ -140,25 +140,6 @@ const weekData = [
       { title: '周报提交', status: 'pending', time: '17:00', type: 'dashed' },
       { title: '团队会议', status: 'pending', time: '14:00', type: 'dashed' },
       { title: '周末内容预排', status: 'pending', time: '18:30', type: 'dashed' },
-    ]
-  },
-  {
-    day: '周六',
-    date: '12',
-    isToday: false,
-    tasks: [
-      { title: '周末热点监控', status: 'pending', time: '10:00', type: 'dashed' },
-      { title: '灵感素材收集', status: 'pending', time: '15:00', type: 'dashed' },
-    ]
-  },
-  {
-    day: '周日',
-    date: '13',
-    isToday: false,
-    tasks: [
-      { title: '下周选题确认', status: 'pending', time: '14:00', type: 'dashed' },
-      { title: '内容预发布检查', status: 'pending', time: '19:00', type: 'dashed' },
-      { title: '个人学习总结', status: 'pending', time: '21:00', type: 'dashed' },
     ]
   },
 ];
@@ -226,7 +207,7 @@ function RoutineView() {
         <div className="flex items-center gap-2">
            <div className="flex items-center gap-2 px-3 py-1.5 bg-white border border-[#E7E5E4] rounded-md shadow-sm text-xs font-medium text-[#44403C]">
              <ChevronLeft className="w-3 h-3 text-[#A1A1AA]" />
-             <span>2026年4月7日 至 13日</span>
+             <span>2026年4月7日 至 11日</span>
              <ChevronRight className="w-3 h-3 text-[#A1A1AA]" />
            </div>
         </div>
