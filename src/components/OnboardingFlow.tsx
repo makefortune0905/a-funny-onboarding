@@ -1041,8 +1041,8 @@ export const OnboardingFlow: React.FC<OnboardingFlowProps> = ({
 
   if (onboardingUiStep === 'slides') {
     return (
-      <div className="flex h-full w-full items-center justify-center bg-[var(--primary-foreground)] px-4 md:px-8 py-4 md:py-6 font-sans overflow-hidden">
-        <div className="flex flex-col items-center justify-between w-full h-full max-w-[1392px]">
+      <div className="flex h-full w-full items-center justify-center bg-[var(--primary-foreground)] px-4 md:px-8 py-6 font-sans overflow-hidden">
+        <div className="flex flex-col items-center w-full max-w-[1392px]">
           {/* Header - Welcome Text */}
           <div className="text-center px-4 shrink-0">
             <div className="text-[18px] md:text-[36px] font-medium leading-tight text-[#78716C] opacity-60">
@@ -1054,10 +1054,10 @@ export const OnboardingFlow: React.FC<OnboardingFlowProps> = ({
           </div>
 
           {/* Middle Content - Mini UI Area */}
-          <div className="flex-1 flex items-center justify-center w-full px-2 md:px-0 min-h-0 my-4 md:my-6">
-            <div className="w-full max-w-[360px] md:max-w-[1200px] md:w-[1200px] h-full max-h-[620px] p-3 md:p-[10px] gap-4 md:gap-[32px] bg-ivory-yellow-1 rounded-[16px] flex flex-col md:flex-row items-center justify-center shadow-none relative">
+          <div className="flex items-center justify-center w-full px-2 md:px-0 mt-6 mb-6">
+            <div className="w-full max-w-[360px] md:max-w-[1200px] md:w-[1200px] h-auto max-h-[calc(100vh-200px)] p-3 md:p-[10px] gap-4 md:gap-[32px] bg-ivory-yellow-1 rounded-[16px] flex flex-col md:flex-row items-center justify-center shadow-none relative">
               {/* Left Column: Mini UI Area */}
-              <div className={`w-full md:w-[800px] h-full max-h-[600px] p-0 md:p-[32px] gap-[10px] rounded-[6px] relative overflow-hidden flex flex-col items-center justify-center ${getPreviewContainerBackground()} [&>div]:scale-[0.45] sm:[&>div]:scale-[0.6] lg:[&>div]:scale-[0.85] xl:[&>div]:scale-100 [&>div]:origin-center`}>
+              <div className={`w-full md:w-[800px] h-auto max-h-[600px] p-0 md:p-[32px] gap-[10px] rounded-[6px] relative overflow-hidden flex flex-col items-center justify-center ${getPreviewContainerBackground()} [&>div]:scale-[0.45] sm:[&>div]:scale-[0.6] lg:[&>div]:scale-[0.85] xl:[&>div]:scale-100 [&>div]:origin-center`}>
                 {/* Navigation Buttons Overlay */}
                 <div className="absolute top-1/2 left-0 right-0 w-full px-[4px] flex justify-between items-center -translate-y-1/2 z-10 pointer-events-none md:pointer-events-auto">
                   <button
@@ -1115,7 +1115,7 @@ export const OnboardingFlow: React.FC<OnboardingFlowProps> = ({
           </div>
 
           {/* Footer - Button */}
-          <div className="flex justify-center shrink-0 pb-2 md:pb-0">
+          <div className="flex justify-center shrink-0">
             <Button
               onClick={onComplete}
               className="h-10 w-[264px] rounded-[10px] bg-[#1C1917] text-sm font-medium text-[#FAFAF9] shadow-xs hover:bg-[#1C1917]/90 active:scale-[0.98] transition-all"
