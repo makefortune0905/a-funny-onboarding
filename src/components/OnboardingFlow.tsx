@@ -1054,32 +1054,32 @@ export const OnboardingFlow: React.FC<OnboardingFlowProps> = ({
           </div>
 
           {/* Middle Content - Mini UI Area */}
-          <div className="flex items-center justify-center w-full px-2 md:px-0 mt-6 mb-6 overflow-hidden">
-            <div className="w-full max-w-[95vw] md:max-w-[1200px] xl:w-[1200px] xl:h-[620px] xl:max-h-none h-auto max-h-[calc(100vh-220px)] p-2 md:p-[10px] gap-3 md:gap-[32px] bg-ivory-yellow-1 rounded-[16px] flex flex-col md:flex-row items-center justify-center shadow-none relative overflow-hidden">
+          <div className="flex items-center justify-center w-full px-2 lg:px-0 mt-6 mb-6 overflow-hidden">
+            <div className="w-full max-w-[95vw] lg:w-[1200px] lg:h-[620px] lg:max-h-none h-auto max-h-[calc(100vh-220px)] p-2 lg:p-[10px] gap-3 lg:gap-[32px] bg-ivory-yellow-1 rounded-[16px] flex flex-col lg:flex-row items-center justify-center shadow-none relative overflow-hidden">
               {/* Left Column: Mini UI Area */}
-              <div className={`w-full md:w-[800px] xl:w-[800px] h-auto xl:h-[600px] max-h-[calc(100vh-280px)] xl:max-h-[600px] p-0 xl:p-[32px] gap-[10px] rounded-[6px] relative overflow-hidden flex flex-col items-center justify-center ${getPreviewContainerBackground()} [&>div]:scale-[0.4] sm:[&>div]:scale-[0.55] md:[&>div]:scale-[0.7] lg:[&>div]:scale-[0.85] xl:[&>div]:scale-100 [&>div]:origin-center`}>
+              <div className={`w-full lg:w-[800px] h-full lg:h-[600px] max-h-[calc(100vh-280px)] lg:max-h-[600px] p-0 lg:p-[32px] gap-[10px] rounded-[6px] relative overflow-hidden flex flex-col items-center justify-center ${getPreviewContainerBackground()} [&>div]:scale-[0.5] sm:[&>div]:scale-[0.65] md:[&>div]:scale-[0.75] lg:[&>div]:scale-[0.85] xl:[&>div]:scale-100 [&>div]:origin-center`}>
                 {/* Navigation Buttons Overlay */}
-                <div className="absolute top-1/2 left-0 right-0 w-full px-[4px] flex justify-between items-center -translate-y-1/2 z-10 pointer-events-none md:pointer-events-auto">
+                <div className="absolute top-1/2 left-0 right-0 w-full px-[4px] flex justify-between items-center -translate-y-1/2 z-10 pointer-events-none lg:pointer-events-auto">
                   <button
                     type="button"
                     onClick={() => canGoPrev && setOnboardingFeatureIndex(prev => Math.max(0, prev - 1))}
-                    className={`w-[32px] h-[32px] md:w-[40px] md:h-[40px] bg-black/20 md:bg-transparent rounded-full md:rounded-none flex items-center justify-center text-white pointer-events-auto transition-opacity ${
-                      canGoPrev ? 'hover:text-white hover:bg-black/30 md:hover:bg-transparent' : 'opacity-30 cursor-not-allowed'
+                    className={`w-[32px] h-[32px] lg:w-[40px] lg:h-[40px] bg-black/20 lg:bg-transparent rounded-full lg:rounded-none flex items-center justify-center text-white pointer-events-auto transition-opacity ${
+                      canGoPrev ? 'hover:text-white hover:bg-black/30 lg:hover:bg-transparent' : 'opacity-30 cursor-not-allowed'
                     }`}
                     aria-label="上一页"
                   >
-                    <ChevronLeft size={20} className="md:w-[24px] md:h-[24px]" />
+                    <ChevronLeft size={20} className="lg:w-[24px] lg:h-[24px]" />
                   </button>
                   
                   <button
                     type="button"
                     onClick={() => canGoNext && setOnboardingFeatureIndex(prev => Math.min(onboardingSlides.length - 1, prev + 1))}
-                    className={`w-[32px] h-[32px] md:w-[40px] md:h-[40px] bg-black/20 md:bg-transparent rounded-full md:rounded-none flex items-center justify-center text-white pointer-events-auto transition-opacity ${
-                      canGoNext ? 'hover:text-white hover:bg-black/30 md:hover:bg-transparent' : 'opacity-30 cursor-not-allowed'
+                    className={`w-[32px] h-[32px] lg:w-[40px] lg:h-[40px] bg-black/20 lg:bg-transparent rounded-full lg:rounded-none flex items-center justify-center text-white pointer-events-auto transition-opacity ${
+                      canGoNext ? 'hover:text-white hover:bg-black/30 lg:hover:bg-transparent' : 'opacity-30 cursor-not-allowed'
                     }`}
                     aria-label="下一页"
                   >
-                    <ChevronRight size={20} className="md:w-[24px] md:h-[24px]" />
+                    <ChevronRight size={20} className="lg:w-[24px] lg:h-[24px]" />
                   </button>
                 </div>
 
@@ -1087,17 +1087,17 @@ export const OnboardingFlow: React.FC<OnboardingFlowProps> = ({
               </div>
 
               {/* Right Column: Text Content */}
-              <div className="w-full md:w-[340px] flex flex-col items-center md:items-start gap-2 md:gap-[32px] shrink-0 px-2 md:px-0">
-                <div className="w-full flex flex-col items-center md:items-start gap-[6px] text-center md:text-left">
-                  <div className="w-full text-[14px] md:text-[20px] font-normal leading-tight text-[#09090B]">
+              <div className="w-full lg:w-[340px] flex flex-col items-center lg:items-start gap-2 lg:gap-[32px] shrink-0 px-2 lg:px-0">
+                <div className="w-full flex flex-col items-center lg:items-start gap-[6px] text-center lg:text-left">
+                  <div className="w-full text-[14px] lg:text-[20px] font-normal leading-tight text-[#09090B]">
                     {activeSlide.title}
                   </div>
-                  <p className="w-full text-[12px] md:text-[18px] font-normal leading-tight text-[#78716C]">
+                  <p className="w-full text-[12px] lg:text-[18px] font-normal leading-tight text-[#78716C]">
                     {activeSlide.description}
                   </p>
                 </div>
                 
-                <div className="flex items-center gap-[10px] w-[220px] justify-center md:justify-start">
+                <div className="flex items-center gap-[10px] w-[220px] justify-center lg:justify-start">
                   {onboardingSlides.map((_, idx) => (
                     <div
                       key={`ob-dot-${idx}`}
@@ -1110,12 +1110,22 @@ export const OnboardingFlow: React.FC<OnboardingFlowProps> = ({
                     />
                   ))}
                 </div>
+
+                {/* Button for <= 1536px - placed below carousel with 32px gap */}
+                <div className="block 2xl:hidden mt-8">
+                  <Button
+                    onClick={onComplete}
+                    className="h-10 w-[264px] rounded-[10px] bg-[#1C1917] text-sm font-medium text-[#FAFAF9] shadow-xs hover:bg-[#1C1917]/90 active:scale-[0.98] transition-all"
+                  >
+                    立即开始
+                  </Button>
+                </div>
               </div>
             </div>
           </div>
 
-          {/* Footer - Button */}
-          <div className="flex justify-center shrink-0">
+          {/* Footer - Button - only show on > 1536px (2xl) */}
+          <div className="hidden 2xl:flex justify-center shrink-0">
             <Button
               onClick={onComplete}
               className="h-10 w-[264px] rounded-[10px] bg-[#1C1917] text-sm font-medium text-[#FAFAF9] shadow-xs hover:bg-[#1C1917]/90 active:scale-[0.98] transition-all"
