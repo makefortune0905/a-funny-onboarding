@@ -1041,21 +1041,23 @@ export const OnboardingFlow: React.FC<OnboardingFlowProps> = ({
 
   if (onboardingUiStep === 'slides') {
     return (
-      <div className="flex h-full w-full items-center justify-center bg-[var(--primary-foreground)] px-8 py-6 font-sans">
-        <div className="flex flex-col items-center justify-center w-full max-w-[1392px]">
-          <div className="text-center px-4">
-            <div className="text-[20px] md:text-[36px] font-medium leading-tight text-[#78716C] opacity-60">
+      <div className="flex h-full w-full items-center justify-center bg-[var(--primary-foreground)] px-4 md:px-8 py-4 md:py-6 font-sans overflow-hidden">
+        <div className="flex flex-col items-center justify-between w-full h-full max-w-[1392px]">
+          {/* Header - Welcome Text */}
+          <div className="text-center px-4 shrink-0">
+            <div className="text-[18px] md:text-[36px] font-medium leading-tight text-[#78716C] opacity-60">
               {onboardingMode === 'returning' ? `又见面啦，${onboardingDisplayName}` : `很高兴认识你，${onboardingDisplayName}`}
             </div>
-            <h2 className="mt-2 text-[24px] md:text-[36px] font-medium leading-tight text-[#0C0A09]">
+            <h2 className="mt-1 md:mt-2 text-[20px] md:text-[36px] font-medium leading-tight text-[#0C0A09]">
               {onboardingMode === 'returning' ? '1 分钟，了解下新版扣子虾可以为你做什么' : '1 分钟，了解下我可以为你做什么'}
             </h2>
           </div>
 
-          <div className="mt-6 md:mt-10 flex items-center justify-center w-full px-4 md:px-0">
-            <div className="w-full max-w-[360px] md:max-w-[1200px] md:w-[1200px] h-auto md:h-[620px] p-4 md:p-[10px] gap-6 md:gap-[32px] bg-ivory-yellow-1 rounded-[16px] flex flex-col md:flex-row items-center shadow-none transition-transform duration-300 2xl:scale-125 origin-center relative">
+          {/* Middle Content - Mini UI Area */}
+          <div className="flex-1 flex items-center justify-center w-full px-2 md:px-0 min-h-0 my-4 md:my-6">
+            <div className="w-full max-w-[360px] md:max-w-[1200px] md:w-[1200px] h-full max-h-[620px] p-3 md:p-[10px] gap-4 md:gap-[32px] bg-ivory-yellow-1 rounded-[16px] flex flex-col md:flex-row items-center justify-center shadow-none relative">
               {/* Left Column: Mini UI Area */}
-              <div className={`w-full md:w-[800px] h-[260px] md:h-[600px] p-0 md:p-[32px] gap-[10px] rounded-[6px] relative overflow-hidden flex flex-col items-center justify-center ${getPreviewContainerBackground()} [&>div]:scale-[0.55] [&>div]:md:scale-100 [&>div]:origin-center`}>
+              <div className={`w-full md:w-[800px] h-full max-h-[600px] p-0 md:p-[32px] gap-[10px] rounded-[6px] relative overflow-hidden flex flex-col items-center justify-center ${getPreviewContainerBackground()} [&>div]:scale-[0.45] sm:[&>div]:scale-[0.6] lg:[&>div]:scale-[0.85] xl:[&>div]:scale-100 [&>div]:origin-center`}>
                 {/* Navigation Buttons Overlay */}
                 <div className="absolute top-1/2 left-0 right-0 w-full px-[4px] flex justify-between items-center -translate-y-1/2 z-10 pointer-events-none md:pointer-events-auto">
                   <button
@@ -1085,12 +1087,12 @@ export const OnboardingFlow: React.FC<OnboardingFlowProps> = ({
               </div>
 
               {/* Right Column: Text Content */}
-              <div className="w-full md:w-[340px] h-auto md:h-[153px] flex flex-col items-center md:items-start gap-4 md:gap-[32px]">
+              <div className="w-full md:w-[340px] flex flex-col items-center md:items-start gap-3 md:gap-[32px] shrink-0">
                 <div className="w-full flex flex-col items-center md:items-start gap-[6px] text-center md:text-left">
-                  <div className="w-full text-[16px] md:text-[20px] font-normal leading-tight text-[#09090B]">
+                  <div className="w-full text-[14px] md:text-[20px] font-normal leading-tight text-[#09090B]">
                     {activeSlide.title}
                   </div>
-                  <p className="w-full text-[14px] md:text-[18px] font-normal leading-tight text-[#78716C]">
+                  <p className="w-full text-[12px] md:text-[18px] font-normal leading-tight text-[#78716C]">
                     {activeSlide.description}
                   </p>
                 </div>
@@ -1112,7 +1114,8 @@ export const OnboardingFlow: React.FC<OnboardingFlowProps> = ({
             </div>
           </div>
 
-          <div className="mt-7 flex justify-center">
+          {/* Footer - Button */}
+          <div className="flex justify-center shrink-0 pb-2 md:pb-0">
             <Button
               onClick={onComplete}
               className="h-10 w-[264px] rounded-[10px] bg-[#1C1917] text-sm font-medium text-[#FAFAF9] shadow-xs hover:bg-[#1C1917]/90 active:scale-[0.98] transition-all"
