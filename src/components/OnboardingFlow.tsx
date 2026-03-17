@@ -1055,9 +1055,9 @@ export const OnboardingFlow: React.FC<OnboardingFlowProps> = ({
 
           {/* Middle Content - Mini UI Area */}
           <div className="flex items-center justify-center w-full px-2 md:px-0 mt-6 mb-6">
-            <div className="w-full max-w-[360px] md:max-w-[1200px] md:w-[1200px] h-auto max-h-[calc(100vh-200px)] p-3 md:p-[10px] gap-4 md:gap-[32px] bg-ivory-yellow-1 rounded-[16px] flex flex-col md:flex-row items-center justify-center shadow-none relative">
+            <div className="w-full max-w-[360px] md:max-w-[1200px] xl:w-[1200px] xl:h-[620px] xl:max-h-none h-auto max-h-[calc(100vh-200px)] p-3 md:p-[10px] gap-4 md:gap-[32px] bg-ivory-yellow-1 rounded-[16px] flex flex-col md:flex-row items-center justify-center shadow-none relative">
               {/* Left Column: Mini UI Area */}
-              <div className={`w-full md:w-[800px] h-auto max-h-[600px] p-0 md:p-[32px] gap-[10px] rounded-[6px] relative overflow-hidden flex flex-col items-center justify-center ${getPreviewContainerBackground()} [&>div]:scale-[0.45] sm:[&>div]:scale-[0.6] lg:[&>div]:scale-[0.85] xl:[&>div]:scale-100 [&>div]:origin-center`}>
+              <div className={`w-full md:w-[800px] xl:w-[800px] h-auto xl:h-[600px] max-h-[600px] p-0 md:p-[32px] gap-[10px] rounded-[6px] relative overflow-hidden flex flex-col items-center justify-center ${getPreviewContainerBackground()} [&>div]:scale-[0.45] sm:[&>div]:scale-[0.6] lg:[&>div]:scale-[0.85] xl:[&>div]:scale-100 [&>div]:origin-center`}>
                 {/* Navigation Buttons Overlay */}
                 <div className="absolute top-1/2 left-0 right-0 w-full px-[4px] flex justify-between items-center -translate-y-1/2 z-10 pointer-events-none md:pointer-events-auto">
                   <button
