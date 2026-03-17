@@ -1,0 +1,146 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2685.3">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000; min-height: 14.0px}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000}
+    span.s1 {font-kerning: none}
+  </style>
+</head>
+<body>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p2"><span class="s1"><i>&lt;!DOCTYPE html&gt;</i><i></i></span></p>
+<p class="p2"><span class="s1">&lt;html lang="zh-CN"&gt;</span></p>
+<p class="p2"><span class="s1">&lt;head&gt;</span></p>
+<p class="p2"><span class="s1">&lt;meta charset="UTF-8"&gt;</span></p>
+<p class="p2"><span class="s1">&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</span></p>
+<p class="p2"><span class="s1">&lt;title&gt;列表 margin 测试&lt;/title&gt;</span></p>
+<p class="p2"><span class="s1">&lt;style&gt;</span></p>
+<p class="p2"><span class="s1">* { margin: 0; padding: 0; box-sizing: border-box; }</span></p>
+<p class="p2"><span class="s1">body {</span></p>
+<p class="p2"><span class="s1">font-family: "PingFang SC", -apple-system, sans-serif;</span></p>
+<p class="p2"><span class="s1">background: #f5f5f5;</span></p>
+<p class="p2"><span class="s1">padding: 40px 20px;</span></p>
+<p class="p2"><span class="s1">}</span></p>
+<p class="p2"><span class="s1">.container {</span></p>
+<p class="p2"><span class="s1">max-width: 800px;</span></p>
+<p class="p2"><span class="s1">margin: 0 auto;</span></p>
+<p class="p2"><span class="s1">background: #fff;</span></p>
+<p class="p2"><span class="s1">padding: 48px;</span></p>
+<p class="p2"><span class="s1">border-radius: 12px;</span></p>
+<p class="p2"><span class="s1">}</span></p>
+<p class="p2"><span class="s1">.scene { margin-bottom: 40px; padding-bottom: 32px; border-bottom: 1px dashed #d9d9d9; }</span></p>
+<p class="p2"><span class="s1">.scene-title { font-size: 18px; font-weight: 500; margin-bottom: 16px; color: #1890ff; }</span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p2"><span class="s1"><i>/* AI Content 样式 */</i><i></i></span></p>
+<p class="p2"><span class="s1">.ai-content {</span></p>
+<p class="p2"><span class="s1">font-family: "PingFang SC", sans-serif;</span></p>
+<p class="p2"><span class="s1">font-size: 16px;</span></p>
+<p class="p2"><span class="s1">line-height: 24px;</span></p>
+<p class="p2"><span class="s1">}</span></p>
+<p class="p2"><span class="s1">.ai-content h4 {</span></p>
+<p class="p2"><span class="s1">font-size: 16px;</span></p>
+<p class="p2"><span class="s1">line-height: 24px;</span></p>
+<p class="p2"><span class="s1">font-weight: 500;</span></p>
+<p class="p2"><span class="s1">margin: 0;</span></p>
+<p class="p2"><span class="s1">}</span></p>
+<p class="p2"><span class="s1">.ai-content p {</span></p>
+<p class="p2"><span class="s1">font-size: 16px;</span></p>
+<p class="p2"><span class="s1">line-height: 24px;</span></p>
+<p class="p2"><span class="s1">font-weight: 400;</span></p>
+<p class="p2"><span class="s1">margin: 0;</span></p>
+<p class="p2"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"><i>/* 关键：列表只有下面有 margin */</i><i></i></span></p>
+<p class="p2"><span class="s1">.ai-content ul, .ai-content ol {</span></p>
+<p class="p2"><span class="s1">margin: 0 0 12px 0;</span></p>
+<p class="p2"><span class="s1">padding-left: 24px;</span></p>
+<p class="p2"><span class="s1">}</span></p>
+<p class="p2"><span class="s1">.ai-content li {</span></p>
+<p class="p2"><span class="s1">font-size: 16px;</span></p>
+<p class="p2"><span class="s1">line-height: 24px;</span></p>
+<p class="p2"><span class="s1">margin: 0;</span></p>
+<p class="p2"><span class="s1">}</span></p>
+<p class="p2"><span class="s1">.ai-content .card {</span></p>
+<p class="p2"><span class="s1">margin: 12px 0;</span></p>
+<p class="p2"><span class="s1">background: #f8f9fa;</span></p>
+<p class="p2"><span class="s1">border: 1px solid #e8e8e8;</span></p>
+<p class="p2"><span class="s1">border-radius: 8px;</span></p>
+<p class="p2"><span class="s1">padding: 16px;</span></p>
+<p class="p2"><span class="s1">}</span></p>
+<p class="p2"><span class="s1">.ai-content .card h4 { margin-bottom: 8px; }</span></p>
+<p class="p2"><span class="s1">&lt;/style&gt;</span></p>
+<p class="p2"><span class="s1">&lt;/head&gt;</span></p>
+<p class="p2"><span class="s1">&lt;body&gt;</span></p>
+<p class="p2"><span class="s1">&lt;div class="container"&gt;</span></p>
+<p class="p2"><span class="s1">&lt;h1 style="text-align: center; margin-bottom: 32px;"&gt;列表 margin 测试&lt;/h1&gt;</span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p2"><span class="s1"><i>&lt;!-- 场景 1 --&gt;</i><i></i></span></p>
+<p class="p2"><span class="s1">&lt;div class="scene"&gt;</span></p>
+<p class="p2"><span class="s1">&lt;div class="scene-title"&gt;✅ 场景 1：小标题 + 列表（效果好）&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1">&lt;div class="ai-content"&gt;</span></p>
+<p class="p2"><span class="s1">&lt;p&gt;项目成功的关键因素包括：&lt;/p&gt;</span></p>
+<p class="p2"><span class="s1">&lt;h4&gt;技术层面&lt;/h4&gt;</span></p>
+<p class="p2"><span class="s1">&lt;ul&gt;</span></p>
+<p class="p2"><span class="s1">&lt;li&gt;清晰的问题定义&lt;/li&gt;</span></p>
+<p class="p2"><span class="s1">&lt;li&gt;高质量的训练数据&lt;/li&gt;</span></p>
+<p class="p2"><span class="s1">&lt;li&gt;合适的算法选择&lt;/li&gt;</span></p>
+<p class="p2"><span class="s1">&lt;/ul&gt;</span></p>
+<p class="p2"><span class="s1">&lt;h4&gt;管理层面&lt;/h4&gt;</span></p>
+<p class="p2"><span class="s1">&lt;ul&gt;</span></p>
+<p class="p2"><span class="s1">&lt;li&gt;完善的评估流程&lt;/li&gt;</span></p>
+<p class="p2"><span class="s1">&lt;li&gt;可持续的运维体系&lt;/li&gt;</span></p>
+<p class="p2"><span class="s1">&lt;/ul&gt;</span></p>
+<p class="p2"><span class="s1">&lt;p&gt;以上因素缺一不可。&lt;/p&gt;</span></p>
+<p class="p2"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p2"><span class="s1"><i>&lt;!-- 场景 2 --&gt;</i><i></i></span></p>
+<p class="p2"><span class="s1">&lt;div class="scene"&gt;</span></p>
+<p class="p2"><span class="s1">&lt;div class="scene-title"&gt;⚠️ 场景 2：文本段落 + 列表（需要判断）&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1">&lt;div class="ai-content"&gt;</span></p>
+<p class="p2"><span class="s1">&lt;p&gt;人工智能是计算机科学的一个分支。&lt;/p&gt;</span></p>
+<p class="p2"><span class="s1">&lt;p&gt;这些任务包括：&lt;/p&gt;</span></p>
+<p class="p2"><span class="s1">&lt;ul&gt;</span></p>
+<p class="p2"><span class="s1">&lt;li&gt;学习：从数据中发现规律&lt;/li&gt;</span></p>
+<p class="p2"><span class="s1">&lt;li&gt;推理：基于知识进行推断&lt;/li&gt;</span></p>
+<p class="p2"><span class="s1">&lt;li&gt;感知：理解感官信息&lt;/li&gt;</span></p>
+<p class="p2"><span class="s1">&lt;/ul&gt;</span></p>
+<p class="p2"><span class="s1">&lt;p&gt;随着计算能力提升，AI 正在改变生活。&lt;/p&gt;</span></p>
+<p class="p2"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p2"><span class="s1"><i>&lt;!-- 场景 3 --&gt;</i><i></i></span></p>
+<p class="p2"><span class="s1">&lt;div class="scene"&gt;</span></p>
+<p class="p2"><span class="s1">&lt;div class="scene-title"&gt;⚠️ 场景 3：列表 + 列表（需要判断）&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1">&lt;div class="ai-content"&gt;</span></p>
+<p class="p2"><span class="s1">&lt;p&gt;项目需要的资源：&lt;/p&gt;</span></p>
+<p class="p2"><span class="s1">&lt;ul&gt;</span></p>
+<p class="p2"><span class="s1">&lt;li&gt;计算资源：GPU 集群&lt;/li&gt;</span></p>
+<p class="p2"><span class="s1">&lt;li&gt;存储资源：分布式文件系统&lt;/li&gt;</span></p>
+<p class="p2"><span class="s1">&lt;/ul&gt;</span></p>
+<p class="p2"><span class="s1">&lt;ol&gt;</span></p>
+<p class="p2"><span class="s1">&lt;li&gt;第一阶段：数据收集&lt;/li&gt;</span></p>
+<p class="p2"><span class="s1">&lt;li&gt;第二阶段：模型训练&lt;/li&gt;</span></p>
+<p class="p2"><span class="s1">&lt;/ol&gt;</span></p>
+<p class="p2"><span class="s1">&lt;p&gt;请根据清单准备资源。&lt;/p&gt;</span></p>
+<p class="p2"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p2"><span class="s1"><i>&lt;!-- 场景 4 --&gt;</i><i></i></span></p>
+<p class="p2"><span class="s1">&lt;div class="scene"&gt;</span></p>
+<p class="p2"><span class="s1">&lt;div class="scene-title"&gt;✅ 场景 4：卡片 + 列表（效果好）&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1">&lt;div class="ai-content"&gt;</span></p>
+<p class="p2"><span class="s1">&lt;p&gt;推荐配置：&lt;/p&gt;</span></p>
+<p class="p2"><span class="s1">&lt;div class="card"&gt;</span></p>
+<p class="p2"><span class="s1">&lt;h4&gt;云端部署方案&lt;/h4&gt;</span></p>
+<p class="p2"><span class="s1">&lt;p&gt;适合弹性扩展场景&lt;/p&gt;</span></p>
+<p class="p2"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1">&lt;ul&gt;</span></p>
+<p class="p2"><span class="s1">&lt;li&gt;支持自动扩缩容&lt;/li&gt;</span></p>
+</body>
+</html>
